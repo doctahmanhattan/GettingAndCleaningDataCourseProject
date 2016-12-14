@@ -42,3 +42,4 @@ Data<-subset(Data,select=selectedNames)
 activityLabels <- read.table(file.path(path_rf, "activity_labels.txt"),header = FALSE)
 head(Data$activity,30)
 
+write.table(tidy, "tidydata.txt", row.names=FALSE)
